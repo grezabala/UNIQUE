@@ -615,13 +615,14 @@ body {
 }
 
 .logo-marca {
-    font-size: 2.90rem;
+    font-size: 3.90rem;
     margin: -2px;
     height: auto;
     position: relative;
     align-self: start;
-    bottom: 10px;
-    left: 45px;
+    bottom: 85px;
+    left: 45px; 
+
 }
 
 .logo-marca span {
@@ -629,73 +630,87 @@ body {
 }
 
 .logo-marca p {
-   margin: 0 auto;
+   margin: 15px auto;
    position: relative;
-   font-size: 1.8rem;
-   margin-left: 8.8rem;
-   bottom: 5rem;
+   font-size: 44px;
+   margin-left: 12.90rem;
+   bottom: 125px;
    padding: 0 1px ;
    height: 1px auto;
    letter-spacing: 16px;
+ 
    
+}
+
+.logo-marca h4 {
+    color:#000000;
+    position: relative;
+    font-size: 2.90rem;
+    margin-right: 10.18rem;
+    bottom: 7.45rem;
+    padding: 0;
+    height: 1px auto;
+    margin-bottom:20px;
 }
 
 /*Titulo*/
 .card-about-title {
-   font-size: 1.8rem;
+   font-size: 3.4rem;
    font-weight: 700;
    color:var(--color-negro-negro);
 
    position: relative;
    display: flex;
-   margin-top: 220px;
-   right: 47.90rem;
+   margin-top: 20px;
+   right: 40.90rem;
    
 }
 
 /*Texto*/
 .card-about-text {
     color:var(--color-negro);
-    margin-top:10px;
     display: inline-block;
     transition: transform 0.2s ease;
+
+    margin: 10%;
+    text-transform: capitalize;
+    margin-top: 12rem;
+    margin-left: 4rem;
+    right: 40.41rem;
+
+    position: relative;
+    bottom: -4rem;
+        
 }
 
 .card-about-text article p {
-    line-height: 1.1;
-    text-align: left;
-    margin-top: -20px;
-    font-size: 2rem;
-    margin-left: 30px;
+    line-height: 1.2;
+    font-size: 24px;
+
+    overflow: hidden;
+    margin-top: 4rem;
+    margin-right: 10rem;
+
 }
 
 .card-about-text i:hover{
     transform: scale(1.1);
 }
 
-/*Imagen a la derecha*/
+/*Imagen a la derecha */
 .card-about-img {
-    width: 100%;
-    height: 500px !important;
-    margin:10px;
-    /*object-fit: cover;*/
-
+    margin-bottom: 22px;
+    margin:2px;
+    left: 40rem;
+    position: relative;
+    bottom: 55rem;
 }
 
 .card-about-img img {
-    max-width: 2980px;
-    gap: 100px;
-    top: 830px;
-    left: -3px;
-}
+   width: 570px;
+   height: 700px;
 
-.img-venta{
-    max-width: 100%;
-    height: auto;
-    margin: auto;
-    
 }
-
 
 /*Icono linkedin*/
 .about-linkedin {
@@ -704,6 +719,10 @@ body {
     font-size: 2rem;
     color: #0077b5; /* color oficial LinkedIn */
     transition: color 0.3s ease, transform 0.3s ease;
+    position: relative;
+
+    top: 12rem;
+    right: 40.45rem;
   
 }
 
