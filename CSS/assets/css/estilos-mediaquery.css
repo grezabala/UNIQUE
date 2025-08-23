@@ -1,0 +1,18 @@
+
+/*======= Responsives ========*/
+@media (max-width: 412px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .nav-menu {
+        min-height: 10vh;
+        color:aqua;
+        font-size: 1rem;
+    }
+
+    .home-title span h1{
+        font-size: 10px;
+        margin-right: -180px;
+    }
+}
