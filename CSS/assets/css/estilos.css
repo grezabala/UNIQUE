@@ -414,10 +414,14 @@ body {
 }
 
 .carousel-logo img {
-    height: 250px;
+    height: 16rem;
     text-align: center;
-    margin-bottom: -200px;
-    margin-left: 450px;
+    margin-bottom: -14rem;
+    margin-left: 440px;
+
+    margin:10rem;
+    position: relative;
+    
 }
 
 .carousel-card {
@@ -430,6 +434,8 @@ body {
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
     margin-top: 200px;
     margin-left: 100px;
+
+    margin-bottom: 12.60rem;
 }
 
 .carousel-card h2 {
