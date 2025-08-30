@@ -21,12 +21,17 @@
         <menu class="navbar-menu">
             <nav class="navbar">
                 <div class="nav-menu">
-                    <ul class="navbar-nav navbar-ul navbar-nav-scroll" >
-                        <li class="nav-item nav-ul-li-menu"><a href="#home" class="nav-link nav-ul-li-a-menu">Home</a></li>
-                        <li class="nav-item nav-ul-li-menu"><a href="#about" class="nav-link nav-ul-li-a-menu">About us</a></li>
-                        <li class="nav-item nav-ul-li-menu"><a href="#service" class=" nav-link nav-ul-li-a-menu">Services </a></li>
-                        <li class="nav-item nav-ul-li-menu"><a href="#profiles" class="nav-link nav-ul-li-a-menu">Profit</a></li>  
-                        <li class="nav-item nav-ul-li-menu"><a href="#contacts" class="nav-link nav-ul-li-a-menu">Contact us</a></li>
+                    <ul class="navbar-nav navbar-ul navbar-nav-scroll">
+                        <li class="nav-item nav-ul-li-menu"><a href="#home" class="nav-link nav-ul-li-a-menu">Home</a>
+                        </li>
+                        <li class="nav-item nav-ul-li-menu"><a href="#about" class="nav-link nav-ul-li-a-menu">About
+                                us</a></li>
+                        <li class="nav-item nav-ul-li-menu"><a href="#service"
+                                class=" nav-link nav-ul-li-a-menu">Services </a></li>
+                        <li class="nav-item nav-ul-li-menu"><a href="#profiles"
+                                class="nav-link nav-ul-li-a-menu">Profit</a></li>
+                        <li class="nav-item nav-ul-li-menu"><a href="#contacts"
+                                class="nav-link nav-ul-li-a-menu">Contact us</a></li>
                     </ul>
                 </div>
             </nav>
@@ -35,11 +40,15 @@
 
     <!--MAIN-->
     <main class="container">
-        <div class="">
+        <div>
             <!--Home-->
             <section id="home" class="section-home">
-                <h1 class="home-title">UNI<span>Q</span>UE</h1>
+                <!--<h1 class="home-title">UNI<span>Q</span>UE</h1>-->
+                     
                 <div class="section-home-div">
+                    <div class="logos">
+                       <img src="../HTML/assets/imgs/logo_unique.svg" alt="">
+                    </div>       
                     <article>
                         <p>
                             Need credit to grow your business? We offer customized financing
@@ -55,16 +64,20 @@
                     <div class="section-service-card">
                         <h2 class="card-Service-title">Our Service</h2>
                         <div class="card-Service-button">
-                            <span><a href="#" class="button-loand"><i class="fa-solid fa-money-bills"></i> LOANS</a></span>       
-                            <span><a href="#" class="button-investments"><i class="fa fa-line-chart"></i>  INVESTMENTS</a></span>
-                            <span><a href="#" class="button-payments"><i class="fa-solid fa-credit-card"></i>  PAYMENTS</a></span>
+                            <span><a href="#loans" class="button-service"><i class="fa-solid fa-money-bills"></i>
+                                    LOANS</a></span>
+                            <span><a href="#investments" class="button-service"><i class="fa fa-line-chart"></i>
+                                    INVESTMENTS</a></span>
+                            <span><a href="#payments" class="button-service"><i class="fa-solid fa-credit-card"></i>
+                                    PAYMENTS</a></span>
                         </div>
-                        <div class="card-Service-portada">
+                        <div class="card-Service-portada active" id="loans">
                             <div class="card-Service-img">
                                 <img src="../HTML/assets/imgs/image_loan_service.jpg" class="card-image" alt="" />
                             </div>
+                            <!--LOANS-->
                             <div class="card-Service-info">
-                                <article>
+                                <article id="loans">
                                     <h1 class="">Are your in need of a loan?</h1>
                                     <p class="card-Service-text">
                                         We are here to help. We offer tailored<br> financial soluction
@@ -79,6 +92,42 @@
                                         Streamline your operations and accelerate <br> your growth with
                                         us.
                                     </p>
+                                </article>
+                            </div>
+                        </div>
+                        <!--INVESTMENTS-->
+                        <div class="card-Service-portada" id="investments">
+                            <div class="card-Service-img">
+                                <img src="../HTML/assets/imgs/image_investment_service.jpg" class="card-image" alt="" />
+                            </div>
+                            <div class="card-Service-info">
+                                <article>
+                                    <h1>Main title goes here</h1>
+                                    <p class="card-Service-text">Vorem ipsum dolor sit amet, consectutur adipiscing elit
+                                    </p>
+                                    <p class="card-Service-text"> Nunc vulputate libero et velit interdum, acaliquet
+                                        odio mattis.</p>
+                                    <p class="card-Service-text"> Class aptent taciti socisque ad litora torquent per
+                                        conubia nostra, per
+                                        inceptos himeneos.</p>
+                                </article>
+                            </div>
+                        </div>
+                        <!--PAYMENTS-->
+                        <div class="card-Service-portada" id="payments">
+                            <div class="card-Service-img">
+                                <img src="../HTML/assets/imgs/image_payments_service.jpg" class="card-image" alt="" />
+                            </div>
+                            <div class="card-Service-info" id="investments">
+                                <article id="investments">
+                                    <h1>Main title goes here</h1>
+                                    <p class="card-Service-text">Vorem ipsum dolor sit amet, consectutur adipiscing elit
+                                    </p>
+                                    <p class="card-Service-text"> Nunc vulputate libero et velit interdum, acaliquet
+                                        odio mattis.</p>
+                                    <p class="card-Service-text"> Class aptent taciti socisque ad litora torquent per
+                                        conubia nostra, per
+                                        inceptos himeneos.</p>
                                 </article>
                             </div>
                         </div>
@@ -107,7 +156,7 @@
                     </div>
                 </div>
             </section>
-        </div>        
+        </div>
         <!--Profiles-->
         <section id="profiles" class="container-p-card">
             <div class="card-profiles">
@@ -127,12 +176,11 @@
         <!--About us-->
         <section id="about" class="section-card-about">
             <div class="card-about" style="height: 950px;">
-               <div class="logo-marca">
-                    <h1>UNI<span>Q</span>UE</h1>
-                    <p>FINANCE</p>
-                    <h4>ABOUT US</h4>
+                <div class="logo-marca">
+                   <img src="../HTML/assets/imgs/Logo.svg" alt="">
                 </div>
                 <div class="card-about-text">
+                    <h4>ABOUT US</h4>
                     <article>
                         <p>We are a U.S startup company dedicated to providing our customers with secure and transparent
                             financial soluctions.
@@ -140,8 +188,8 @@
                         <p>Our expertise in developing financial services and our dedication to customer service
                             enable us to provide customers with access to agile,
                             customized loans that are tailored to their specific needs, thereby facilitating the
-                            sacalability of their projects or businesses.    
-                        </p>   
+                            sacalability of their projects or businesses.
+                        </p>
                     </article>
                 </div>
                 <div class="card-about-img">
@@ -261,10 +309,12 @@
                 </div>
             </section>
         </footer>
-    </main>  
+    </main>
 </body>
-  <!--enlace para los script
+<!--enlace para los script
     <script src="/JavaScript/carousel.js"></script>-->
-    <script src="../JavaScript/menu.js"></script>
-    <script src="../JavaScript/index-carousel.js"></script>
+<script src="../JavaScript/menu.js"></script>
+<script src="../JavaScript/index-carousel.js"></script>
+<script src="../JavaScript/unique.js"> </script>
+
 </html>
