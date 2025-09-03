@@ -37,3 +37,28 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
+//==== Modal ====
+const modal = document.getElementById("myModal");
+const btn = document.getElementById("openModal");
+const closeBtn = document.getElementById("closeModal");
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+closeBtn.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+ if (event.target !== modal && event.target !== openBtn && !modal.contains(event.target)) {
+    modal.style.display = "none";
+  }
+} 
+
+//Para evitar el scroll
+openModal.addEventListener("click", function(event) {
+  event.preventDefault();
+  modal.style.display ="block";
+});

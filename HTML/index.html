@@ -42,9 +42,7 @@
     <main class="container">
         <div>
             <!--Home-->
-            <section id="home" class="section-home">
-                <!--<h1 class="home-title">UNI<span>Q</span>UE</h1>-->
-                     
+            <section id="home" class="section-home">                    
                 <div class="section-home-div">
                     <div class="logos">
                        <img src="../HTML/assets/imgs/logo_unique.svg" alt="">
@@ -60,8 +58,8 @@
             </section>
             <!--Service-->
             <section id="service" class="section-service">
-                <div class="section-service-div">
-                    <div class="section-service-card">
+                <div>
+                    <div>
                         <h2 class="card-Service-title">Our Service</h2>
                         <div class="card-Service-button">
                             <span><a href="#loans" class="button-service"><i class="fa-solid fa-money-bills"></i>
@@ -164,15 +162,30 @@
                 <div class="card-profiles-text">
                     <p>flexibility, convenience, and confidence in every transaction are hallmanrks of Unique Finance.
                     </p>
-                    <br />
                     <p>We provide customized loans and versatile payment options, always with the security you are
                         looking for.</p>
                     <p>Streamline your operations and accelerate your growth with us.</p>
-                    <p><a href="#">Financing request ></a></p>
+                    <p><a href="#" id="openModal">Financing request ></a></p>
+                </div>
+            </div>
+
+             <!-- Modal -->
+            <div id="myModal" class="modal">
+                <div class="modal-content">
+                    <span class="close" id="closeModal">&times;</span>
+                    <h2>Financing request</h2>
+                    <form>
+                        <input type="text" placeholder="Your name*" required>
+                        <input type="email" placeholder="Your mail*" required>
+                        <input type="tel" placeholder="Phone number*" required>
+                        <input type="text" placeholder="Subject">
+                        <textarea placeholder="Message*" required></textarea>
+                        <button type="submit" class="submit-btn">Contact now</button>
+                    </form>
                 </div>
             </div>
         </section>
-
+       
         <!--About us-->
         <section id="about" class="section-card-about">
             <div class="card-about" style="height: 950px;">
@@ -270,8 +283,7 @@
                     <!--Columna del lado izquierdo del footer-->
                     <div class="footer-left">
                         <div class="footer-logo">
-                            UNI<span>Q</span>UE<br>
-                            <p>FINANCE</p>
+                            <img src="../HTML/assets/imgs/Logo.svg" alt="">
                         </div>
                         <p> Vorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc vulputate libero et velit
                             interdum, ac aliquet odio mattis. </p>
