@@ -13,6 +13,10 @@
     <!--fon-awesome-->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--enlace de JavaScript para enviar el formulario a un correo-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
 </head>
 
 <body>
@@ -63,11 +67,11 @@
                         <h2 class="card-Service-title">Our Service</h2>
                         <div class="card-Service-button">
                             <span><a href="#loans" class="button-service"><i class="fa-solid fa-money-bills"></i>
-                                    LOANS</a></span>
+                                LOANS</a></span>
                             <span><a href="#investments" class="button-service"><i class="fa fa-line-chart"></i>
-                                    INVESTMENTS</a></span>
+                                INVESTMENTS</a></span>
                             <span><a href="#payments" class="button-service"><i class="fa-solid fa-credit-card"></i>
-                                    PAYMENTS</a></span>
+                                PAYMENTS</a></span>
                         </div>
                         <div class="card-Service-portada active" id="loans">
                             <div class="card-Service-img">
@@ -160,11 +164,11 @@
             <div class="card-profiles">
                 <h1>GET A CUSTOMIZED LOANS TODAY</h1>
                 <div class="card-profiles-text">
-                    <p>flexibility, convenience, and confidence in every transaction are hallmanrks of Unique Finance.
+                    <p>Flexibility, convenience, and confidence in every transaction are hallmanrks of Unique Finance.
                     </p>
                     <p>We provide customized loans and versatile payment options, always with the security you are
                         looking for.</p>
-                    <p>Streamline your operations and accelerate your growth with us.</p>
+                    <!--<p>Streamline your operations and accelerate your growth with us.</p>-->
                     <p><a href="#" id="openModal">Financing request ></a></p>
                 </div>
             </div>
@@ -174,13 +178,13 @@
                 <div class="modal-content">
                     <span class="close" id="closeModal">&times;</span>
                     <h2>Financing request</h2>
-                    <form>
-                        <input type="text" placeholder="Your name*" required>
-                        <input type="email" placeholder="Your mail*" required>
-                        <input type="tel" placeholder="Phone number*" required>
-                        <input type="text" placeholder="Subject">
-                        <textarea placeholder="Message*" required></textarea>
-                        <button type="submit" class="submit-btn">Contact now</button>
+                    <form id="contact-form">
+                        <input type="text" name="your_name" placeholder="Your name*" id="your_name" required >
+                        <input type="email" name="your_email" placeholder="Your mail*" id="your_email" required >
+                        <input type="tel" name="phone_number" placeholder="Phone number*"  id="phone_number" required>
+                        <input type="text" name="subject" placeholder="Subject" id="subject">
+                        <textarea name="message" placeholder="Message*" required></textarea>
+                        <button type="submit" class="submit-btn" id="btn-enviar">Contact now</button>
                     </form>
                 </div>
             </div>
@@ -188,7 +192,7 @@
        
         <!--About us-->
         <section id="about" class="section-card-about">
-            <div class="card-about" style="height: 950px;">
+            <div class="card-about">
                 <div class="logo-marca">
                    <img src="../HTML/assets/imgs/Logo.svg" alt="">
                 </div>
